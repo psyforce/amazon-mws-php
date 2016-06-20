@@ -3,6 +3,15 @@ amzon-mws
 
 ### Amazon Marketplace Web Service libraries
 
+Installation
+------------
+
+Install [Composer](http://getcomposer.org/) and add amazon-mws to your `composer.json`:
+
+    "require": {
+      "Psyforce/amzon-mws":"dev-master"
+    }
+
 Used these libraries :
 
 - amazon-mws-v20090101-php-2015-06-18._V316922310_
