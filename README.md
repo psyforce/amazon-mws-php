@@ -9,7 +9,7 @@ Installation
 Install [Composer](http://getcomposer.org/) and add amazon-mws to your `composer.json`:
 
     "require": {
-      "Psyforce/amzon-mws":"dev-master"
+      "psyforce/amzon-mws":"dev-master"
     }
 
 Used these libraries :
