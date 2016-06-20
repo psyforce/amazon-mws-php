@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetSubscriptionDetailsResponse xmlns="http://mws.amazonservices.com/schema/Webstore/2014-09-01">
+   <GetSubscriptionDetailsResult>
+        <SellerId>String</SellerId>
+        <MarketplaceId>String</MarketplaceId>
+        <SellerSKU>String</SellerSKU>
+        <SubscriptionState>String</SubscriptionState>
+        <TotalSubscriptionCount>1</TotalSubscriptionCount>
+        <SubscriptionDetailList>
+            <SubscriptionDetail>
+                <Date>1969-07-21T02:56:03Z</Date>
+                <SubscriptionCount>1</SubscriptionCount>
+            </SubscriptionDetail>
+        </SubscriptionDetailList>
+    </GetSubscriptionDetailsResult>
+   <ResponseMetadata>
+        <RequestId>String</RequestId>
+    </ResponseMetadata>
+</GetSubscriptionDetailsResponse>

@@ -1,0 +1,32 @@
+{
+  "name": "Psyforce/amzon-mws",
+  "type": "library",
+  "description": "Amazon Marketplace Web Service libraries",
+  "minimum-stability": "dev",
+  "license": "Apache-2.0",
+  "authors": [{
+    "name": "Amazon.com, Inc.",
+    "homepage": "https://developer.amazonservices.de/"
+  }, {
+    "name": "Aleksey Troshchiy",
+    "email": "psyforce.alex@gmail.com"
+  }],
+  "include-path": ["src/"],
+  "autoload": {
+    "psr-0": {
+      "FBAInboundServiceMWS": "src/",
+      "FBAInventoryServiceMWS": "src/",
+      "FBAOutboundServiceMWS": "src/",
+      "MarketplaceWebService": "src/",
+      "MarketplaceWebServiceOrders": "src/",
+      "MarketplaceWebServiceProducts": "src/",
+      "MarketplaceWebServiceSellers": "src/",
+      "MarketplaceWebServiceWebstore":"src/",
+      "MWSCartService":"src/",
+      "MWSCustomerService":"src/",
+      "MWSMerchantFulfillmentService":"src/",
+      "MWSRecommendationsSectionService":"src/",
+      "MWSSubscriptionsService":"src/"
+    }
+  }
+}
