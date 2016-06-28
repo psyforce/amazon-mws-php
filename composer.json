@@ -1,5 +1,5 @@
 {
-  "name": "Psyforce/amzon-mws",
+  "name": "psyforce/amzon-mws",
   "type": "library",
   "description": "Amazon Marketplace Web Service libraries",
   "minimum-stability": "dev",
