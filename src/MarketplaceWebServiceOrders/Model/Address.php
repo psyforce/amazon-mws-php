@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2015 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2018 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Orders
  * @version  2013-09-01
- * Library Version: 2015-09-24
- * Generated: Fri Sep 25 20:06:28 GMT 2015
+ * Library Version: 2018-01-17
+ * Generated: Wed Jan 17 18:31:42 UTC 2018
  */
 
 /**
@@ -41,6 +41,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
  * <li>PostalCode: string</li>
  * <li>CountryCode: string</li>
  * <li>Phone: string</li>
+ * <li>AddressType: string</li>
  *
  * </ul>
  */
@@ -61,6 +62,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     'PostalCode' => array('FieldValue' => null, 'FieldType' => 'string'),
     'CountryCode' => array('FieldValue' => null, 'FieldType' => 'string'),
     'Phone' => array('FieldValue' => null, 'FieldType' => 'string'),
+    'AddressType' => array('FieldValue' => null, 'FieldType' => 'string'),
     );
     parent::__construct($data);
     }
@@ -568,6 +570,52 @@ require_once (dirname(__FILE__) . '/../Model.php');
     public function withPhone($value)
     {
         $this->setPhone($value);
+        return $this;
+    }
+
+    /**
+     * Get the value of the AddressType property.
+     *
+     * @return String AddressType.
+     */
+    public function getAddressType()
+    {
+        return $this->_fields['AddressType']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the AddressType property.
+     *
+     * @param string addressType
+     * @return this instance
+     */
+    public function setAddressType($value)
+    {
+        $this->_fields['AddressType']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Check to see if AddressType is set.
+     *
+     * @return true if AddressType is set.
+     */
+    public function isSetAddressType()
+    {
+                return !is_null($this->_fields['AddressType']['FieldValue']);
+            }
+
+    /**
+     * Set the value of AddressType, return this.
+     *
+     * @param addressType
+     *             The new value to set.
+     *
+     * @return This instance.
+     */
+    public function withAddressType($value)
+    {
+        $this->setAddressType($value);
         return $this;
     }
 

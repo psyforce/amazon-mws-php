@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2015 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2018 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Orders
  * @version  2013-09-01
- * Library Version: 2015-09-24
- * Generated: Fri Sep 25 20:06:28 GMT 2015
+ * Library Version: 2018-01-17
+ * Generated: Wed Jan 17 18:31:42 UTC 2018
  */
 
 /**
@@ -30,7 +30,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 {
 
     const SERVICE_VERSION = '2013-09-01';
-    const MWS_CLIENT_VERSION = '2015-09-24';
+    const MWS_CLIENT_VERSION = '2018-01-17';
 
     /** @var string */
     private  $_awsAccessKeyId = null;
@@ -398,11 +398,9 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      */
     public function __construct($awsAccessKeyId, $awsSecretAccessKey, $applicationName, $applicationVersion, $config = null)
     {
-        if(version_compare(PHP_VERSION, '5.6.0', '<')) {
-            iconv_set_encoding('output_encoding', 'UTF-8');
-            iconv_set_encoding('input_encoding', 'UTF-8');
-            iconv_set_encoding('internal_encoding', 'UTF-8');
-        }
+        iconv_set_encoding('output_encoding', 'UTF-8');
+        iconv_set_encoding('input_encoding', 'UTF-8');
+        iconv_set_encoding('internal_encoding', 'UTF-8');
 
         $this->_awsAccessKeyId = $awsAccessKeyId;
         $this->_awsSecretAccessKey = $awsSecretAccessKey;

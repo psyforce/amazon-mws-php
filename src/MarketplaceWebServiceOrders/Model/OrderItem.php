@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2015 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2018 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Orders
  * @version  2013-09-01
- * Library Version: 2015-09-24
- * Generated: Fri Sep 25 20:06:28 GMT 2015
+ * Library Version: 2018-01-17
+ * Generated: Wed Jan 17 18:31:42 UTC 2018
  */
 
 /**
@@ -36,6 +36,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
  * <li>Title: string</li>
  * <li>QuantityOrdered: int</li>
  * <li>QuantityShipped: int</li>
+ * <li>ProductInfo: MarketplaceWebServiceOrders_Model_ProductInfoDetail</li>
  * <li>PointsGranted: MarketplaceWebServiceOrders_Model_PointsGrantedDetail</li>
  * <li>ItemPrice: MarketplaceWebServiceOrders_Model_Money</li>
  * <li>ShippingPrice: MarketplaceWebServiceOrders_Model_Money</li>
@@ -58,6 +59,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
  * <li>ScheduledDeliveryEndDate: string</li>
  * <li>PriceDesignation: string</li>
  * <li>BuyerCustomizedInfo: MarketplaceWebServiceOrders_Model_BuyerCustomizedInfoDetail</li>
+ * <li>TaxCollection: MarketplaceWebServiceOrders_Model_TaxCollection</li>
  *
  * </ul>
  */
@@ -73,6 +75,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     'Title' => array('FieldValue' => null, 'FieldType' => 'string'),
     'QuantityOrdered' => array('FieldValue' => null, 'FieldType' => 'int'),
     'QuantityShipped' => array('FieldValue' => null, 'FieldType' => 'int'),
+    'ProductInfo' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_ProductInfoDetail'),
     'PointsGranted' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_PointsGrantedDetail'),
     'ItemPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
     'ShippingPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
@@ -95,6 +98,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     'ScheduledDeliveryEndDate' => array('FieldValue' => null, 'FieldType' => 'string'),
     'PriceDesignation' => array('FieldValue' => null, 'FieldType' => 'string'),
     'BuyerCustomizedInfo' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_BuyerCustomizedInfoDetail'),
+    'TaxCollection' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_TaxCollection'),
     );
     parent::__construct($data);
     }
@@ -372,6 +376,52 @@ require_once (dirname(__FILE__) . '/../Model.php');
     public function withQuantityShipped($value)
     {
         $this->setQuantityShipped($value);
+        return $this;
+    }
+
+    /**
+     * Get the value of the ProductInfo property.
+     *
+     * @return ProductInfoDetail ProductInfo.
+     */
+    public function getProductInfo()
+    {
+        return $this->_fields['ProductInfo']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the ProductInfo property.
+     *
+     * @param MarketplaceWebServiceOrders_Model_ProductInfoDetail productInfo
+     * @return this instance
+     */
+    public function setProductInfo($value)
+    {
+        $this->_fields['ProductInfo']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Check to see if ProductInfo is set.
+     *
+     * @return true if ProductInfo is set.
+     */
+    public function isSetProductInfo()
+    {
+                return !is_null($this->_fields['ProductInfo']['FieldValue']);
+            }
+
+    /**
+     * Set the value of ProductInfo, return this.
+     *
+     * @param productInfo
+     *             The new value to set.
+     *
+     * @return This instance.
+     */
+    public function withProductInfo($value)
+    {
+        $this->setProductInfo($value);
         return $this;
     }
 
@@ -1402,6 +1452,52 @@ require_once (dirname(__FILE__) . '/../Model.php');
     public function withBuyerCustomizedInfo($value)
     {
         $this->setBuyerCustomizedInfo($value);
+        return $this;
+    }
+
+    /**
+     * Get the value of the TaxCollection property.
+     *
+     * @return TaxCollection TaxCollection.
+     */
+    public function getTaxCollection()
+    {
+        return $this->_fields['TaxCollection']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the TaxCollection property.
+     *
+     * @param MarketplaceWebServiceOrders_Model_TaxCollection taxCollection
+     * @return this instance
+     */
+    public function setTaxCollection($value)
+    {
+        $this->_fields['TaxCollection']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Check to see if TaxCollection is set.
+     *
+     * @return true if TaxCollection is set.
+     */
+    public function isSetTaxCollection()
+    {
+                return !is_null($this->_fields['TaxCollection']['FieldValue']);
+            }
+
+    /**
+     * Set the value of TaxCollection, return this.
+     *
+     * @param taxCollection
+     *             The new value to set.
+     *
+     * @return This instance.
+     */
+    public function withTaxCollection($value)
+    {
+        $this->setTaxCollection($value);
         return $this;
     }
 

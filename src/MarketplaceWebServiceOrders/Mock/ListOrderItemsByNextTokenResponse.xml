@@ -11,6 +11,9 @@
                 <Title>String</Title>
                 <QuantityOrdered>1</QuantityOrdered>
                 <QuantityShipped>1</QuantityShipped>
+                <ProductInfo>
+                    <NumberOfItems>1</NumberOfItems>
+                </ProductInfo>
                 <PointsGranted>
                     <PointsNumber>1</PointsNumber>
                     <PointsMonetaryValue>
@@ -78,6 +81,10 @@
                 <BuyerCustomizedInfo>
                     <CustomizedURL>String</CustomizedURL>
                 </BuyerCustomizedInfo>
+                <TaxCollection>
+                    <Model>String</Model>
+                    <ResponsibleParty>String</ResponsibleParty>
+                </TaxCollection>
             </OrderItem>
         </OrderItems>
     </ListOrderItemsByNextTokenResult>

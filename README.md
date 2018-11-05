@@ -22,7 +22,7 @@ Used these libraries :
 - MWSFulfillmentInventoryPHPClientLibrary-2010-10-01._V274218980_
 - MWSFulfillmentOutboundShipmentPHPClientLibrary-2010-10-01._V300197569_
 - MWSMerchantFulfillmentPHPClientLibrary-2015-06-01._V294540041_
-- MWSOrdersPHPClientLibrary-2013-09-01._V293335039_
+- MWSOrdersPHPClientLibrary-2013-09-01._CB487774971_
 - MWSRecommendationsPHPClientLibrary-2013-04-01._V316922852_
 - MWSSellersPHPClientLibrary-2011-07-01._V316922799_
 - MWSSubscriptionsServicePHPClientLibrary-2013-07-01._V316922762_

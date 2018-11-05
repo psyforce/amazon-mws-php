@@ -25,69 +25,69 @@ require_once (dirname(__FILE__) . '/../Model.php');
 
 
 /**
- * MarketplaceWebServiceOrders_Model_BuyerCustomizedInfoDetail
+ * MarketplaceWebServiceOrders_Model_ProductInfoDetail
  * 
  * Properties:
  * <ul>
  * 
- * <li>CustomizedURL: string</li>
+ * <li>NumberOfItems: int</li>
  *
  * </ul>
  */
 
- class MarketplaceWebServiceOrders_Model_BuyerCustomizedInfoDetail extends MarketplaceWebServiceOrders_Model {
+ class MarketplaceWebServiceOrders_Model_ProductInfoDetail extends MarketplaceWebServiceOrders_Model {
 
     public function __construct($data = null)
     {
     $this->_fields = array (
-    'CustomizedURL' => array('FieldValue' => null, 'FieldType' => 'string'),
+    'NumberOfItems' => array('FieldValue' => null, 'FieldType' => 'int'),
     );
     parent::__construct($data);
     }
 
     /**
-     * Get the value of the CustomizedURL property.
+     * Get the value of the NumberOfItems property.
      *
-     * @return String CustomizedURL.
+     * @return Integer NumberOfItems.
      */
-    public function getCustomizedURL()
+    public function getNumberOfItems()
     {
-        return $this->_fields['CustomizedURL']['FieldValue'];
+        return $this->_fields['NumberOfItems']['FieldValue'];
     }
 
     /**
-     * Set the value of the CustomizedURL property.
+     * Set the value of the NumberOfItems property.
      *
-     * @param string customizedURL
+     * @param int numberOfItems
      * @return this instance
      */
-    public function setCustomizedURL($value)
+    public function setNumberOfItems($value)
     {
-        $this->_fields['CustomizedURL']['FieldValue'] = $value;
+        $this->_fields['NumberOfItems']['FieldValue'] = $value;
         return $this;
     }
 
     /**
-     * Check to see if CustomizedURL is set.
+     * Check to see if NumberOfItems is set.
      *
-     * @return true if CustomizedURL is set.
+     * @return true if NumberOfItems is set.
      */
-    public function isSetCustomizedURL()
+    public function isSetNumberOfItems()
     {
-                return !is_null($this->_fields['CustomizedURL']['FieldValue']);
+                return !is_null($this->_fields['NumberOfItems']['FieldValue']);
             }
 
     /**
-     * Set the value of CustomizedURL, return this.
+     * Set the value of NumberOfItems, return this.
      *
-     * @param customizedURL
+     * @param numberOfItems
      *             The new value to set.
      *
      * @return This instance.
      */
-    public function withCustomizedURL($value)
+    public function withNumberOfItems($value)
     {
-        $this->setCustomizedURL($value);
+        $this->setNumberOfItems($value);
         return $this;
     }
 
